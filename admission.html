@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGPS - Rudra Goswami Public School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="Images/favicon-32x32.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 15px 0;
+        }
+
+        .navbar-brand img {
+            height: 70px;
+            margin-right: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107 !important;
+        }
+
+        .welcome-section {
+            background: #e3f2fd;
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .carousel-inner img {
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .about-section,
+        .cards-section {
+            padding: 60px 20px;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 40px 20px 10px;
+        }
+
+        footer i {
+            margin-right: 10px;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ffc107;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Scrolling Banner -->
+    <div class="admission-banner bg-warning py-2 overflow-hidden position-relative">
+        <div class="scrolling-text text-dark fw-semibold px-3">
+            📣 Admissions Open for 2025-2026 Batch &nbsp; 📣 Admissions Open for 2025-2026 Batch &nbsp; 📣Admissions
+            Open for 2025-2026 Batch &nbsp; 📣
+        </div>
+    </div>
+
+    <!-- Banner Styling -->
+    <style>
+        .admission-banner {
+            white-space: nowrap;
+        }
+
+        .scrolling-text {
+            display: inline-block;
+            animation: scroll-left-right 20s linear infinite;
+            font-size: 1.1rem;
+        }
+
+        @keyframes scroll-left-right {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .scrolling-text {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="schoollogodark-removebg-preview.png" alt="RGPS Logo">
+                    Rudra Goswami Public School
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- Admission Page Content -->
+
+    <!-- Part 1: Admission Information Section -->
+    <section class="py-5" style="background-color: #e3f2fd;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="mb-4 fw-bold">Admission Process</h2>
+                    <p class="lead">We welcome students from Grade 1 to Grade 12. Our admission process is designed to
+                        be transparent, simple, and inclusive. Applications are accepted on a rolling basis depending on
+                        seat availability.</p>
+                    <ul class="list-unstyled mt-4 text-start d-inline-block">
+                        <li><strong>Step 1:</strong> Fill out the admission form online or at our campus.</li>
+                        <li><strong>Step 2:</strong> Appear for the entrance test (for Grades 6 and above).</li>
+                        <li><strong>Step 3:</strong> Attend a parent-student interview with the principal.</li>
+                        <li><strong>Step 4:</strong> Submit required documents and complete the fee payment.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Part 2: Admission Form Section -->
+    <section class="py-5" style="background-color: #f4f4f4;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center mb-4 fw-bold">Admission Form</h2>
+                    <form class="p-4 bg-white rounded shadow">
+                        <div class="mb-3">
+                            <label for="studentName" class="form-label">Student's Full Name</label>
+                            <input type="text" class="form-control" id="studentName" placeholder="Enter full name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dob" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="grade" class="form-label">Class for Admission</label>
+                            <select class="form-select" id="grade" required>
+                                <option selected disabled>Select Grade</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="parentName" class="form-label">Parent/Guardian's Name</label>
+                            <input type="text" class="form-control" id="parentName"
+                                placeholder="Enter parent or guardian name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Residential Address</label>
+                            <textarea class="form-control" id="address" rows="3" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary px-5 py-2">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Part 3: Contact for Admission Section -->
+    <section class="py-5" style="background-color: #e3f2fd;">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">Need Help with Admission?</h2>
+            <p class="lead">You can also contact us directly through phone or reach us on our social media platforms for
+                admission assistance.</p>
+            <div class="d-flex justify-content-center flex-wrap gap-4 mt-4">
+                <div>
+                    <i class="bi bi-telephone-fill me-2"></i>+91 12345 67890
+                </div>
+                <div>
+                    <i class="bi bi-whatsapp me-2"></i>+91 98765 43210
+                </div>
+                <div>
+                    <i class="bi bi-facebook me-2"></i>@RGPSchool
+                </div>
+                <div>
+                    <i class="bi bi-instagram me-2"></i>@rgps.official
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Animation -->
+    <style>
+        section {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+                    <p><i class="fas fa-fax"></i> 0120-1234567</p>
+                    <p><i class="fas fa-envelope"></i> contact@rgps.edu.in</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 RGPS Road, Lucknow, India</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Social Media Handles</h5>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2025 RGPS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
